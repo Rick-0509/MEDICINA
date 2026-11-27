@@ -16,12 +16,16 @@ Desempeño en AneRBC (validación cruzada de 5 particiones, AUC): anemia 0,94 ·
 
 ## Instalación (Windows)
 
-Requiere Python 3.10 o superior.
+Requiere **Python 3.12** ([descarga](https://www.python.org/downloads/release/python-31210/)). No usar 3.13 ni superior: `numpy 2.0.2`, que exige Cellpose, no se instala en esas versiones. La instalación descarga unos 1,5 GB (PyTorch).
 
 ```powershell
-python -m venv venv
+git clone https://github.com/Rick-0509/MEDICINA.git
+cd MEDICINA
+py -3.12 -m venv venv
 .\venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
+
+Las versiones de `requirements.txt` están fijadas a propósito: el modelo se guardó con `scikit-learn 1.9.1` y puede no cargar con otra versión.
 
 ## Uso
 
