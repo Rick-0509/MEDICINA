@@ -27,6 +27,10 @@ py -3.12 -m venv venv
 
 Las versiones de `requirements.txt` están fijadas a propósito: el modelo se guardó con `scikit-learn 1.9.1` y puede no cargar con otra versión.
 
+**Clona el repositorio en una ruta corta** (por ejemplo `C:\proyectos\MEDICINA` o el Escritorio). PyTorch incluye archivos con nombres muy largos y Windows limita las rutas a 260 caracteres: en carpetas muy anidadas la instalación falla con `OSError: [Errno 2] No such file or directory`. Otra solución es [habilitar las rutas largas de Windows](https://pip.pypa.io/warnings/enable-long-paths).
+
+Probado en Windows 11 con Python 3.12. Requiere unos 2 GB de RAM libres e internet para la instalación y para el primer uso de Cellpose.
+
 ## Uso
 
 ```powershell
