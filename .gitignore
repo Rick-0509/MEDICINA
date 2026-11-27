@@ -1,0 +1,26 @@
+# Entorno virtual de Python (se recrea con requirements.txt)
+venv/
+.venv/
+
+# Datos descargados (varios GB; se obtienen con scripts/descargar_anerbc.py)
+datos/
+
+# Resultados intermedios y pruebas (se regeneran con los scripts)
+resultados/cache_celulas/
+resultados/app_v1/
+resultados/segmentacion/
+resultados/v0_bccd/
+
+# Python
+__pycache__/
+*.pyc
+
+# Gradio y sistema
+.gradio/
+flagged/
+.DS_Store
+Thumbs.db
+
+# Nunca subir fotos de pacientes ni credenciales
+*.env
+.env
